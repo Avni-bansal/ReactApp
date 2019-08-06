@@ -1,0 +1,17 @@
+ [
+         {
+            "id": 0,
+            "username": "avni",
+            "email": "abc@gmail.com",
+            "contact" : "9910932040",
+            "updating": false
+         },
+
+         {
+           "id": 1,
+            "username": "alex",
+            "email": "alex@gmail.com",
+            "contact" : "9183723456",
+            "updating": false
+         }
+]
