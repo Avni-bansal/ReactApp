@@ -10,7 +10,7 @@ describe('Employee', () => {
   });
 
 
-it('should submit login form', function () {
+it('should submit employee form', function () {
     browser.url('http://localhost:3000/');
        var input = $("#username");
     input.setValue('test123');
@@ -23,13 +23,10 @@ it('should submit login form', function () {
 
      browser.execute( () =>
      {
-      document.getElementById("loginForm").submit();
+    document.getElementById("loginForm").submit();
      });
 
-     var pageUrl = browser.getUrl();
-     assert.equal(pageUrl, 'http://localhost:3000/?username=test123&email=test123%40gmail.com&contact=9910932040');
-     browser.pause(6000);
-
+  browser.pause(6000);
      });
 
 it('should detect if an element is displayed', () => {
@@ -63,5 +60,6 @@ it('should save a screenshot of the browser view', function () {
     browser.url('http://localhost:3000/');
     browser.saveScreenshot('./some/path/screenshot.png');
 });
+
 
 });
